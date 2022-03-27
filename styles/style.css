@@ -1,0 +1,98 @@
+body { 
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+    --var--color: #90ee90;
+    --var--color2:#006400;
+    --var--boderRadius: 20px;
+}
+.container {
+    display: flex;
+    flex-flow: wrap column;
+    background: var(--var--color);
+    width: 500px;
+    height: 700px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: var(--var--boderRadius);
+    -webkit-border-radius: var(--var--boderRadius);
+    -moz-border-radius: var(--var--boderRadius);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font: bold 1.8rem sans-serif;
+    border-bottom: solid 5px var(--var--color2); 
+    color: var(--var--color2);
+}
+
+.input {
+    display: flex;
+    width: 400px;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input input {
+    width: 300px;
+    height: 45px;
+    border-radius: var(--var--boderRadius);
+    -webkit-border-radius: var(--var--boderRadius);
+    -moz-border-radius: var(--var--boderRadius);
+    border: solid var(--var--color2);
+    outline: 0;
+    background-color: #90ee90;
+    font: bold 1.5rem sans-serif;
+    color: var(--var--color2);
+    text-align: center;
+}
+
+.input label {
+    font: 1.5rem sans-serif;
+    color: var(--var--color2);
+}
+
+button {
+    width: 400px;
+    height: 40px;
+    font: bold 1.2rem sans-serif;
+    background: var(--var--color);
+    color: var(--var--color2);
+    border: solid var(--var--color2);
+    border-radius: var(--var--boderRadius);
+    transition: background-color 500ms, 1s ease-out, padding 1s;
+    -webkit-transition: background-color 500ms, 1s ease-out, padding 1s;
+    -moz--transition: background-color 500ms, 1s ease-out, padding 1s;
+}
+
+#clear{
+    width: 150px;
+}
+
+button:hover {
+    background-color: var(--var--color2);
+    color: var(--var--color);
+    font-size: 1.3rem;
+}
+
+#result {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    font: 1.8rem sans-serif;
+    width: 400px;
+    height: 150px;
+    border-radius: var(--var--boderRadius);
+    box-sizing: border-box;
+    color: var(--var--color);
+    background-color: var(--var--color2)
+}
+
